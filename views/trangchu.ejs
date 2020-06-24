@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.js"></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="layout.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <title>Web chat</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="login-form">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">User name</label>
+                    <input type="text" class="form-control" id="username">
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="login">Sign in</button>
+        </div>
+        <div id="chatform">
+            <div id="left">
+                <div id="box-status">Online</div>
+                <div id="box-list">
+                </div>
+            </div>
+            <div id="right">
+                <div id="sayHi">Hello <span id="currentuser"></span>
+                    <button type="button" class="btn btn-light" id="logout">Logout</button>
+                </div>
+                <div id="chatbox">
+                    
+                </div >
+                <div id="announce"></div>
+                <div id="sendmessage">
+                    <input type="text" class="form-control" id="txtmessage">
+                    <button type="button" class="btn btn-light" id="send">SEND</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
